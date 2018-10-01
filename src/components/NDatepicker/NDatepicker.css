@@ -1,0 +1,150 @@
+.nobly-dpr {
+  box-shadow: 1px 1px 81px rgba(41,60,74,.18);
+  flex-direction: row-reverse;
+  font-family: "Lato", sans-serif;
+}
+
+.rdrDayNumber > span {
+  font-size: 13px;
+}
+
+.rdrDay {
+  width: 30px;
+  padding: 0 4px;
+}
+
+
+.rdrMonth {
+  width: 266px;
+  padding: 0 0.833em 0 0.833em;
+}
+
+/* Hide start and end dates range picker */
+.rdrInputRanges {
+  display: none;
+}
+
+.rdrWeekDay {
+  color: #3d515b;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.rdrMonth {
+  position: relative;
+}
+
+.rdrMonthName {
+  position: absolute;
+    top: -35px;
+    left: 100px;
+    color: #0080de;
+    font-size: 14px;
+}
+
+.rdrInRange {
+  color:  #d5edff !important;
+}
+
+.rdrInRange + .rdrDayNumber > span{
+  color: #3d515b !important;
+}
+
+.rdrDay:not(.rdrDayPassive) .rdrInRange ~ .rdrDayNumber span {
+  color: #3d515b;
+}
+
+.rdrMonthPicker,
+.rdrYearPicker {
+  display: none;
+}
+
+.rdrDateDisplay {
+  padding: .2em 0.833em;
+  background-color: #ffffff;
+}
+
+.rdrMonthAndYearWrapper {
+  padding-top: 0px;
+}
+
+.rdrMonthAndYearWrapper {
+  height: 30px;
+}
+
+
+.rdrStaticRange{
+  border-bottom: none;
+}
+
+.rdrStaticRangeLabel {
+  color: #65747c;
+}
+
+.rdrDateDisplayItem input {
+  height: 30px;
+  border-radius: 4px;
+  background-color: #ffffff;
+  border: solid 1px #dbdbdb;
+  text-align: left;
+  text-indent: 30px;
+}
+
+.rdrDateDisplayItem:before {
+  content: url('../../calendarIcon.svg');
+  display: inline-block;
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  top: 10px;
+  left: 10px;
+}
+
+.rdrDateDisplayItem {
+  border: none;
+  box-shadow: none;
+  position: relative;
+}
+
+.rdrNextButton,
+.rdrPprevButton {
+  background: #ffffff;
+}
+
+.rdrNextButton i,
+.rdrPprevButton i {
+  display: none;
+}
+
+.rdrNextButton:after {
+  content: url('../../nextBeforeIcon.svg');
+  width: 7px;
+  display: inline-block;
+}
+
+.rdrPprevButton:after {
+  content: url('../../nextBeforeIcon.svg');
+  width: 7px;
+  display: inline-block;
+  transform: rotate(180deg);
+}
+
+.rdrNextPrevButton:hover,
+.rdrPprevButton:hover {
+  background: #ffffff;
+}
+
+.nobly__rdr-wrapper {
+  position: relative;
+  display: inline-block
+}
+
+.nobly__btn-wrapper {
+  position: absolute;
+    bottom: 10%;
+    right: 10%;
+} 
+
+.nobly__drd-wrapper-absolute {
+  position: absolute;
+}
